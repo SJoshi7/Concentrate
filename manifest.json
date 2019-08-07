@@ -3,9 +3,9 @@
 	"name":"Concentrate Extension",
 	"version":"0.0.1",
 	"icons":{
-		"16":"16.png",
-		"48":"48.png",
-		"128":"128.png"
+		"16":"image/16.png",
+		"48":"image/48.png",
+		"128":"image/128.png"
 	},
 	"content_scripts":[
 		{
@@ -13,7 +13,10 @@
 				"*://*.facebook.com/*",
 				"*://*.youtube.com/*"
 			],
-			"js":"content.js"
+			"js":["content.js"]
 		}
+	],
+	"web_accessible_resources":[
+		"image/alert.jpg"
 	]
 }
